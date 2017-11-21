@@ -10,8 +10,8 @@ street_address:
 city: San Diego
 state: CA
 zip_code: 
-country: United States of America
-phone: (619) 555-5555
+country: 
+phone: (619) 867-3203
 
 # homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
