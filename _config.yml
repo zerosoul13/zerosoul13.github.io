@@ -1,8 +1,8 @@
 # site settings
-title: Celeste professional cleaning services
-subtitle: 
+title: Celeste's cleaning
+subtitle: Bussiness and residential professional services
 email: info@celestecleaning.com
-description: Bussiness and residential professional cleaning services
+description: 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author:
