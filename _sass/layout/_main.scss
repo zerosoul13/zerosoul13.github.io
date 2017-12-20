@@ -6,21 +6,314 @@
 
 /* Main */
 
-	#main {
-		background-color: _palette(bg-alt);
+body {
+    background-color: #E7ECF4;
+    margin:0;
+    padding:0;
+    font-family: Arial;
+}
 
-		> * {
-			border-top: solid 1px _palette(border);
+@font-face {
+  font-family: 'Mermaid';
+  src: url('fonts/Mermaid1001.ttf');
+}
 
-			&:first-child {
-				border-top: 0;
-			}
+@font-face {
+    font-family: 'mermaidbold';
+    src: url('../fonts/mermaid1001-webfont.woff2') format('woff2'),
+         url('../fonts/mermaid1001-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-			@include inner;
-		}
+}
 
-		&.alt {
-			background-color: transparent;
-			border-bottom: solid 1px _palette(border);
-		}
-	}
+.header {
+	width: 80%;
+	margin:0 auto;
+	height:110px;
+	margin-top:10px;
+	display: flex;
+}
+
+.header .logo {
+	height: 100px;
+	width:50%;
+	padding-left:25px;
+}
+
+.header .logo img {
+	height: 100px;
+	width: 400px;
+}
+
+.contact {
+	width: 50%;
+	color: #771D66;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 5%;
+	font-size: 22px;
+	padding-top:24px;
+	bottom:0;
+}
+
+.contact img {
+	width: 190px;
+	height: 50px;
+}
+
+.slide {
+	width:80%;
+	height:500px;
+	background-image: url("../images/slide.png");
+	margin:0 auto;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slide .service-button {
+	width:190px;
+	margin:0 auto;
+	height:50px;
+	padding-top: 400px;
+
+}
+
+.slide .service-button img {
+	width: 190px;
+	height: 50px;
+}
+
+.about {
+	width: 80%;
+	height: 250px;
+	background-color: #38C5E5;
+	color: #FFF;
+	margin: 0 auto;
+	margin-top:-5px;
+}
+
+.about-title {
+	font-size: 36px;
+	text-align: center;
+	width:100%;
+	position: relative;
+	padding-top:50px;
+	font-family: 'mermaidbold', serif;
+}
+
+.about-content {
+	width: 60%;
+	position: relative;
+	padding-top: 25px;
+	font-size: 16px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+.services {
+	width:80%;
+	height:500px;
+	background-image: url("../images/fondo_servicios.png");
+	margin:0 auto;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.services .services-title {
+	color: #771D66;
+	font-size: 36px;
+	width:100%;
+	position: relative;
+	padding-top:30px;
+	text-align: center;
+	font-family: 'mermaidbold', serif;
+}
+
+.services .service-container {
+	width:80%;
+	margin:0 auto;
+}
+
+.services .service-container .service {
+	width:25%;
+	height:200px;
+	float: left;
+}
+
+.services .service-container .service img {
+	width: 150px;
+	height:150px;
+
+}
+
+.services .service-container .more {
+	width:80%;
+	margin:0 auto;
+	color: #000;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.testimonials {
+	width:80%;
+	height:245px;
+	background-image: url("../images/fondo_testimonios.png");
+	margin:0 auto;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.testimonials-title {
+	font-size: 36px;
+	color: #FFF;
+	position:relative;
+	width:40%;
+	padding-left:53%;
+	padding-top: 40px;
+	text-align: center;
+	font-family: 'mermaidbold', serif;
+}
+
+
+.testimonials-content {
+	font-size: 14px;
+	color: #FFF;
+	position: relative;
+	padding-left: 53%;
+	padding-top:5px;
+	text-align: justify;
+	width:40%;
+}
+
+.contact-form {
+	width:80%;
+	height:600px;
+	background-image: url("../images/fondo_contacto.png");
+	margin:0 auto;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -5px;
+
+}
+
+.contact-form .info{
+	width:50%;
+	float: left;
+	padding-top: 100px;
+	position: relative;
+
+}
+
+.contact-form .info .info-title{
+	font-weight: bold;
+	font-size:24px;
+	text-align:center;
+
+}
+
+.contact-form .info .info-number{
+	font-size:18px;
+	text-align:center;
+	padding-top:20px;
+}
+
+.contact-form .info .info-address-title{
+	font-size:18px;
+	text-align:center;
+	padding-top:20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.contact-form .info .info-address-info{
+	font-size:18px;
+	text-align:center;
+	padding-top:20px;
+}
+
+.contact-form .info .info-license{
+	font-size:18px;
+	text-align:center;
+	padding-top:20px;
+	font-weight: bold;
+}
+
+.contact-form .info .info-social{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.contact-form .info .info-social img{
+	width: 75px;
+	height: 75px;
+
+}
+
+.contact-form .form {
+	width:50%;
+	height: 100%;
+    padding-top: 80px;
+    float: left;
+}
+
+.contact-form .form .container {
+	background-color: #0A8DC6;
+	width:80%;
+	margin:0 auto;
+	height:60%;
+	border-radius: 15px;
+}
+
+.contact-form .form .container .title {
+	font-size: 16px;
+	color: #FFF;
+	position: relative;
+	padding-top:10px;
+	padding-left:25px;
+}
+
+.contact-form .form .container .input {
+	width:87%;
+	position: relative;
+	padding-top:5px;
+	padding-left:25px;
+}
+
+.contact-form .form .container .input input{
+	width:100%;
+	height:20px;
+}
+
+.contact-form .form .container .input textarea{
+	width: 100%;
+	height:50px;
+}
+
+.contact-form .footer {
+	width:100%;
+	margin:0 auto;
+	float: left;
+	position: relative;
+    margin-top:-260px;
+
+}
+
+.contact-form .footer img{
+	height:200px;
+	width:100%;
+}
