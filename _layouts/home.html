@@ -118,12 +118,13 @@
 		</div>
 
 		<div class="form">
+		<form action="https://formspree.io/{{ site.email }}" method="POST">
 			<div class="container">
 				<div class="title">
 					Name:
 				</div>
 				<div class="input">
-					<input type="text">
+					<input type="text" name="name" id="name">
 				</div>
 				<div class="title">
 					Bussiness name:
@@ -135,7 +136,7 @@
 					Email:
 				</div>
 				<div class="input">
-					<input type="text">
+					<input type="text" name="_replyto" id="email">
 				</div>
 				<div class="title">
 					Telephone number:
@@ -150,9 +151,10 @@
 					<textarea></textarea>
 				</div>
 				<div class="submit-button">
-					<input type="image" src="assets/images/boton_formulario.png" name="">
+					<input type="image" src="assets/images/boton_formulario.png" value="Send Message" >
 				</div>
 			</div>
+		 </form>
 		</div>
 		<div class="footer">
 			<img src="assets/images/footer.png">
