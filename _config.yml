@@ -35,5 +35,5 @@ markdown: kramdown
 sass:
   style: compressed
 
-plugins_dir:
+plugins:
     - jekyll-seo-tag
