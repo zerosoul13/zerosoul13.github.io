@@ -2,15 +2,15 @@
 title: Celeste's cleaning
 subtitle: Business and residential professional services
 email: info@celestecleaning.com
-description: 
+description: "cleaning services in San Diego, CA"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-author:
+author: "info@celestecleaning.com"
 street_address:
 city: San Diego
 state: CA
 zip_code: 
-country: 
+country: United States
 phone: (619) 867-3203
 
 # homepage tiles
@@ -34,3 +34,6 @@ markdown: kramdown
 
 sass:
   style: compressed
+
+plugins_dir:
+    - jekyll-seo-tag
